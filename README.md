@@ -1,8 +1,8 @@
-# Nerfies
+# ViDi Benchmark Homepage
 
 This is the repository that contains source code for the [ViDi benchmark website](https://vidi-benchmark.github.io).
 
-If you find ViDi useful for your work please cite:
+If you find ViDi Benchmark useful for your work please cite:
 ```
 @article{anon2025vidi
   author    = {Anonymous Submission},
