@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="utf-8">
   <meta name="description"
-        content="ViDi: A Benchmark for the Identification and Captioning of Visual Differences in Image Pairs">
+    content="ViDi: A Benchmark for the Identification and Captioning of Visual Differences in Image Pairs">
   <meta name="keywords" content="ViDi, Vision Language Benchmark, Spot the Differences">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>ViDi: A Benchmark for the Identification and Captioning of Visual Differences in Image Pairs</title>
@@ -22,15 +23,13 @@
     gtag('config', 'G-PYVRSFMDRL');
   </script> -->
 
-  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
-        rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
 
   <link rel="stylesheet" href="./static/css/bulma.min.css">
   <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
   <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
   <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
-  <link rel="stylesheet"
-        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="./static/css/index.css">
   <link rel="icon" href="./static/images/favicon.svg">
 
@@ -40,6 +39,7 @@
   <script src="./static/js/bulma-slider.min.js"></script>
   <script src="./static/js/index.js"></script>
 </head>
+
 <body>
 
   <!--  
@@ -85,13 +85,14 @@
   -->
 
 
-<section class="hero">
-  <div class="hero-body">
-    <div class="container is-max-desktop">
-      <div class="columns is-centered">
-        <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">ViDi: A Benchmark for the Identification and Captioning of Visual Differences in Image Pairs</h1>
-          <!-- <div class="is-size-5 publication-authors">
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">ViDi: A Benchmark for the Identification and Captioning of Visual
+              Differences in Image Pairs</h1>
+            <!-- <div class="is-size-5 publication-authors">
             <span class="author-block">
               <a href="https://dysby.netlify.app">Helder Dias</a><sup>1</sup>,</span>
             <span class="author-block">
@@ -106,19 +107,18 @@
             <span class="author-block"><sup>2</sup>INESC-ID</span>
           </div> -->
 
-          <div class="column has-text-centered">
-            <div class="publication-links">
-              <!-- PDF Link. -->
-              <span class="link-block">
-                <a href="https://arxiv.org/"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
+            <div class="column has-text-centered">
+              <div class="publication-links">
+                <!-- PDF Link. -->
+                <span class="link-block">
+                  <a href="https://arxiv.org/" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
                       <i class="fas fa-file-pdf"></i>
-                  </span>
-                  <span>Paper</span>
-                </a>
-              </span>
-              <!-- <span class="link-block">
+                    </span>
+                    <span>Paper</span>
+                  </a>
+                </span>
+                <!-- <span class="link-block">
                 <a href="https://arxiv.org"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
@@ -127,7 +127,7 @@
                   <span>arXiv</span>
                 </a>
               </span> -->
-              <!-- Video Link.
+                <!-- Video Link.
               <span class="link-block">
                 <a href="https://www.youtube.com/watch?v=MrKrnHhk8IA"
                    class="external-link button is-normal is-rounded is-dark">
@@ -148,115 +148,229 @@
                   </a>
               </span>
               <!-- Dataset Link. -->
-              <span class="link-block">
-                <a href="https://anonymous.4open.science/r/ViDi-FC45/"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
+                <span class="link-block">
+                  <a href="https://anonymous.4open.science/r/ViDi-FC45/"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
                       <i class="far fa-images"></i>
-                  </span>
-                  <span>Data</span>
+                    </span>
+                    <span>Data</span>
                   </a>
-            </div>
+              </div>
 
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <img src="./static/images/pipeline.png" alt="ViDi pipeline summary.">
-      <h2 class="subtitle has-text-centered">
-        ViDi pipeline summary.
-      </h2>
-    </div>
-  </div>
-</section>
-
-
-<!-- <section class="hero is-light is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-steve">
-          <video poster="" id="steve" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/steve.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-chair-tp">
-          <video poster="" id="chair-tp" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/chair-tp.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-shiba">
-          <video poster="" id="shiba" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/shiba.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-fullbody">
-          <video poster="" id="fullbody" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/fullbody.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-blueshirt">
-          <video poster="" id="blueshirt" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/blueshirt.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-mask">
-          <video poster="" id="mask" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/mask.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-coffee">
-          <video poster="" id="coffee" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/coffee.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-toby">
-          <video poster="" id="toby" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/toby2.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
+  <section class="hero teaser">
+    <div class="container is-max-desktop">
+      <div class="hero-body">
+        <img src="./static/images/pipeline.png" alt="ViDi pipeline summary.">
+        <h2 class="subtitle has-text-centered">
+          ViDi pipeline summary.
+        </h2>
       </div>
     </div>
-  </div>
-</section> -->
+  </section>
 
 
-<section class="section">
-  <div class="container is-max-desktop">
-    <!-- Abstract. -->
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
-        <div class="content has-text-justified">
-          <p>
-            Recent advances in Multimodal Large Language Models (MLLMs) have brought forward capabilities such as handling multiple images or engage in multi-turn conversations involving images. 
-          </p>
-          <p>
-            In this paper, we present a challenging <i>spot the differences</i> benchmark for evaluating MLLMs, geared toward the identification and captioning of Visual Differences (ViDi). 
-            The benchmark corresponds to a test-only dataset with 200 pairs of images, along with human-annotated descriptions of visually noticeable differences for each pair. 
-            ViDi goes beyond the identification of single differences, challenging models to articulate changes using natural language, while pinpointing the subject of each difference and its absolute or relative location. 
-            Empirical results reveal that MLLMs are still in an early development stage, showing limited performance in <i>spot the differences</i> tasks.
-          </p>
+  <section class="section">
+    <div class="container is-max-desktop">
+      <!-- Abstract. -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Abstract</h2>
+          <div class="content has-text-justified">
+            <p>
+              Recent advances in Multimodal Large Language Models (MLLMs) have brought forward capabilities such as
+              handling multiple images or engage in multi-turn conversations involving images.
+            </p>
+            <p>
+              In this paper, we present a challenging <i>spot the differences</i> benchmark for evaluating MLLMs, geared
+              toward the identification and captioning of Visual Differences (ViDi).
+              The benchmark corresponds to a test-only dataset with 200 pairs of images, along with human-annotated
+              descriptions of visually noticeable differences for each pair.
+              ViDi goes beyond the identification of single differences, challenging models to articulate changes using
+              natural language, while pinpointing the subject of each difference and its absolute or relative location.
+              Empirical results reveal that MLLMs are still in an early development stage, showing limited performance
+              in <i>spot the differences</i> tasks.
+            </p>
+          </div>
         </div>
       </div>
-    </div>
-    <!--/ Abstract. -->
+      <!--/ Abstract.
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <table>
+            <caption>MLLM performance metrics on the ViDi Benchmark. The values correspond to the average between the
+              two possible image orders, together with the corresponding variation.</caption>
+            <thead>
+              <tr>
+                <th colspan="7">Granular Alignment Setting</th>
+              </tr>
+              <tr>
+                <th>Model</th>
+                <th>BLEU<sub>1</sub></th>
+                <th>BLEU<sub>2</sub></th>
+                <th>BLEU<sub>3</sub></th>
+                <th>BLEU<sub>4</sub></th>
+                <th>ROUGE<sub>L</sub></th>
+                <th>CIDEr</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Phi3.5 Vision</td>
+                <td>37.5 &plusmn;0.2</td>
+                <td>21.0 &plusmn;0.4</td>
+                <td>9.9 &plusmn;0.3</td>
+                <td>5.1 &plusmn;0.3</td>
+                <td>29.5 &plusmn;0.3</td>
+                <td>6.9 &plusmn;0.4</td>
+              </tr>
+              <tr>
+                <td>MiniCPM-V-2.6</td>
+                <td>23.3 &plusmn;0.0</td>
+                <td>12.3 &plusmn;0.0</td>
+                <td>4.6 &plusmn;0.0</td>
+                <td>2.1 &plusmn;0.0</td>
+                <td>23.2 &plusmn;0.0</td>
+                <td>0.0 &plusmn;0.0</td>
+              </tr>
+              <tr>
+                <td>LLaVA-CoT</td>
+                <td>50.0 &plusmn;0.4</td>
+                <td><b>26.9 &plusmn;0.5</b></td>
+                <td><b>14.4 &plusmn;0.5</b></td>
+                <td><b>8.0 &plusmn;0.4</b></td>
+                <td>32.1 &plusmn;0.3</td>
+                <td>12.4 &plusmn;0.5</td>
+              </tr>
+              <tr>
+                <td>NVLM-D-72B</td>
+                <td>42.0 &plusmn;0.1</td>
+                <td>23.5 &plusmn;0.2</td>
+                <td>11.8 &plusmn;0.2</td>
+                <td>6.4 &plusmn;0.2</td>
+                <td>32.5 &plusmn;0.2</td>
+                <td>7.9 &plusmn;0.1</td>
+              </tr>
+              <tr>
+                <td>LLAVA-OV-72B</td>
+                <td>46.0 &plusmn;0.3</td>
+                <td>27.4 &plusmn;0.2</td>
+                <td>15.7 &plusmn;0.3</td>
+                <td>9.7 &plusmn;0.3</td>
+                <td><b>33.6 &plusmn;0.6</b></td>
+                <td><b>15.7 &plusmn;0.8</b></td>
+              </tr>
+              <tr>
+                <td>InternVL2.5-78B</td>
+                <td><b>53.4 &plusmn;0.5</b></td>
+                <td>31.4 &plusmn;0.1</td>
+                <td>17.5 &plusmn;0.2</td>
+                <td>10.2 &plusmn;0.2</td>
+                <td>37.5 &plusmn;0.0</td>
+                <td>17.2 &plusmn;0.0</td>
+              </tr>
+              <tr>
+                <td>Llama-3.2-90B</td>
+                <td>34.2 &plusmn;0.1</td>
+                <td>18.4 &plusmn;0.1</td>
+                <td>9.2 &plusmn;0.1</td>
+                <td>5.0 &plusmn;0.0</td>
+                <td>29.9 &plusmn;0.0</td>
+                <td>3.2 &plusmn;0.2</td>
+              </tr>
+            </tbody>
+            <thead>
+              <tr>
+                <th colspan="7">Global Alignment Setting</th>
+              </tr>
+              <tr>
+                <th>Model</th>
+                <th>BLEU<sub>1</sub></th>
+                <th>BLEU<sub>2</sub></th>
+                <th>BLEU<sub>3</sub></th>
+                <th>BLEU<sub>4</sub></th>
+                <th>ROUGE<sub>L</sub></th>
+                <th>CIDEr</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Phi3.5 Vision</td>
+                <td><b>27.9 &plusmn;0.1</b></td>
+                <td><b>14.4 &plusmn;0.1</b></td>
+                <td><b>6.6 &plusmn;0.0</b></td>
+                <td><b>3.3 &plusmn;0.0</b></td>
+                <td><b>22.6 &plusmn;0.0</b></td>
+                <td>3.3 &plusmn;0.1</td>
+              </tr>
+              <tr>
+                <td>MiniCPM-V-2.6</td>
+                <td>22.4 &plusmn;0.1</td>
+                <td>11.1 &plusmn;0.0</td>
+                <td>4.2 &plusmn;0.0</td>
+                <td>1.7 &plusmn;0.0</td>
+                <td>19.4 &plusmn;0.0</td>
+                <td>1.2 &plusmn;0.1</td>
+              </tr>
+              <tr>
+                <td>LLaVA-CoT</td>
+                <td>4.1 &plusmn;0.0</td>
+                <td>2.0 &plusmn;0.0</td>
+                <td>1.0 &plusmn;0.0</td>
+                <td>0.5 &plusmn;0.0</td>
+                <td>13.6 &plusmn;0.1</td>
+                <td><b>1.0 &plusmn;0.2</b></td>
+              </tr>
+              <tr>
+                <td>NVLM-D-72B</td>
+                <td>13.3 &plusmn;0.0</td>
+                <td>6.9 &plusmn;0.0</td>
+                <td>3.1 &plusmn;0.0</td>
+                <td><b>1.6 &plusmn;0.0</b></td>
+                <td>19.5 &plusmn;0.1</td>
+                <td>0.9 &plusmn;0.0</td>
+              </tr>
+              <tr>
+                <td>LLAVA-OV-72B</td>
+                <td>1.5 &plusmn;0.0</td>
+                <td>0.9 &plusmn;0.0</td>
+                <td>0.5 &plusmn;0.0</td>
+                <td>0.3 &plusmn;0.0</td>
+                <td>13.0 &plusmn;0.0</td>
+                <td>0.0 &plusmn;0.0</td>
+              </tr>
+              <tr>
+                <td>InternVL2.5-78B</td>
+                <td><b>16.3 &plusmn;0.3</b></td>
+                <td>8.6 &plusmn;0.1</td>
+                <td>4.6 &plusmn;0.0</td>
+                <td>2.6 &plusmn;0.0</td>
+                <td>18.7 &plusmn;0.0</td>
+                <td><b>3.4 &plusmn;0.0</b></td>
+              </tr>
+              <tr>
+                <td>Llama-3.2-90B</td>
+                <td>23.6 &plusmn;0.2</td>
+                <td><b>11.5 &plusmn;0.1</b></td>
+                <td>5.5 &plusmn;0.0</td>
+                <td>2.9 &plusmn;0.0</td>
+                <td><b>16.3 &plusmn;0.2</b></td>
+                <td>1.5 &plusmn;0.1</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      -->
 
-    <!-- Paper video.
+      <!-- Paper video.
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <h2 class="title is-3">Video</h2>
@@ -267,52 +381,121 @@
       </div>
     </div>
      Paper video. -->
-  </div>
-</section>
+    </div>
+  </section>
 
-<!-- author    = {Helder Dias and Arlindo D. Oliveira and Bruno Martins}, -->
-<section class="section" id="BibTeX">
-  <div class="container is-max-desktop content">
-    <h2 class="title">BibTeX</h2>
-    <pre><code>@article{anon2025vidi,
+  <!-- Image carousel -->
+  <section class="hero is-small">
+    <div class="hero-body">
+      <div class="container">
+        <div id="results-carousel" class="carousel results-carousel">
+          <div class="item">
+            <center>
+              <img src="static/images/instance_14_img_1.png" alt="instance 14" />
+              <img src="static/images/instance_14_img_2.png" alt="instance 14" />
+            </center>
+            <h6 class="subtitle is-6">
+              The color of the sky is blue or orange.<br>
+              The tower at the centre, with or without an antenna.<br>
+              The color of the logo of the coffee shop on the left, either green or purple.<br>
+              The traffic lights on the left are either green or red.<br>
+              The arrowhead on the light bulb sign at the construction site has 4 or 5 light bulbs.<br>
+              The logo at the construction site is either red or green.<br>
+              The crosswalk at the bottom, with the left stripe more or less faded.
+            </h6>
+          </div>
+          <div class="item">
+            <center>
+              <img src="static/images/instance_15_img_1.png" alt="instance 15" />
+              <img src="static/images/instance_15_img_2.png" alt="instance 15" />
+            </center>
+            <h6 class="subtitle is-6">
+              The number of windows on a house in the center.<br>
+              The color of the cover hiding a construction site in the center is green or red.<br>
+              The pink house in the center, with or without a small statue of a saint on its wall.<br>
+              The color of the door on the brick wall, either brown or green.<br>
+              The color of the shirt of the person driving the boat is blue or purple.<br>
+              The number written on the side of the boat is 9246 or 92466.<br>
+              The graffiti on the orange wall of the house on the right is missing.<br>
+              The stone step at the lower left corner, with or without a docking ring.<br>
+            </h6>
+          </div>
+          <div class="item">
+            <center>
+              <img src="static/images/instance_11_img_1.png" alt="instance 11" />
+              <img src="static/images/instance_11_img_2.png" alt="instance 11" />
+            </center>
+            <h6 class="subtitle is-6">
+              The front wheel of the bike, with or without an orange reflector.<br>
+              The steering handlebars, with or without a mirror.<br>
+              The centre of the bike, either clear or black, or with a Victory Motorcycles logo.<br>
+              The woman's arm tattoo pattern is different.<br>
+              The woman's belt has a pattern with circles or is fully dark.
+            </h6>
+          </div>
+          <div class="item">
+            <center>
+              <img src="static/images/instance_12_img_1.png" alt="instance 12" />
+              <img src="static/images/instance_12_img_2.png" alt="instance 12" />
+            </center>
+            <h6 class="subtitle is-6">
+                The teddy bear's foot is to the left, with or without pads.<br>
+                The yellow block in the center features a letter S or a number 3.<br>
+                The set of toys at the front is either with or without a matryoshka doll.<br>
+                The letter S or U on the blue block to the right.<br>
+                The color of the triangle block further to the right is yellow or orange.
+            </h6>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End image carousel -->
+
+
+  <!-- author    = {Helder Dias and Arlindo D. Oliveira and Bruno Martins}, -->
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>@article{anon2025vidi,
   author    = {Anonymous submission},
   title     = {ViDi: A Benchmark for the Identification and Captioning of Visual Differences in Image Pairs},
   journal   = {under review},
   year      = {2025},
 }</code></pre>
-  </div>
-</section>
+    </div>
+  </section>
 
 
-<footer class="footer">
-  <div class="container">
-    <div class="content has-text-centered">
-      <a class="icon-link"
-         href="./static/videos/vidi_paper.pdf">
-        <i class="fas fa-file-pdf"></i>
-      </a>
-    <!--       <a class="icon-link" href="https://github.com/" class="external-link" disabled>
+  <footer class="footer">
+    <div class="container">
+      <div class="content has-text-centered">
+        <a class="icon-link" href="./static/videos/vidi_paper.pdf">
+          <i class="fas fa-file-pdf"></i>
+        </a>
+        <!--       <a class="icon-link" href="https://github.com/" class="external-link" disabled>
         <i class="fab fa-github"></i>
       </a> -->
-    </div>
-    <div class="columns is-centered">
-      <div class="column is-8">
-        <div class="content">
-          <p>
-            This website is licensed under a <a rel="license"
-                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
-            Commons Attribution-ShareAlike 4.0 International License</a>.
-          </p>
-          <p>
-            This means you are free to borrow the <a
-              href="https://github.com/nerfies/nerfies.github.io">source code</a> of this website,
-            we just ask that you link back to this page in the footer.
-          </p>
+      </div>
+      <div class="columns is-centered">
+        <div class="column is-8">
+          <div class="content">
+            <p>
+              This website is licensed under a <a rel="license"
+                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+                Commons Attribution-ShareAlike 4.0 International License</a>.
+            </p>
+            <p>
+              This means you are free to borrow the <a href="https://github.com/nerfies/nerfies.github.io">source
+                code</a> of this website,
+              we just ask that you link back to this page in the footer.
+            </p>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</footer>
+  </footer>
 
 </body>
+
 </html>
