@@ -384,10 +384,25 @@
     </div>
   </section>
 
+
+  <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    var carousels = bulmaCarousel.attach("#results-carousel", {
+      slidesToScroll: 1,
+      slidesToShow: 1,
+      autoplay: true,
+      autoplaySpeed: 8000, // 8 seconds
+      infinite: true
+    });
+  });
+  </script>
+
+
   <!-- Image carousel -->
   <section class="hero is-small">
     <div class="hero-body">
       <div class="container">
+        <!-- <div id="results-carousel" class="carousel"></div> -->
         <div id="results-carousel" class="carousel results-carousel">
           <div class="item">
             <center>
