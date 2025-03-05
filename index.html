@@ -31,7 +31,7 @@
   <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="./static/css/index.css">
-  <link rel="icon" href="./static/images/favicon.svg">
+  <link rel="icon" href="./static/images/icons8-compare-cute-outline-96.png">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script defer src="./static/js/fontawesome.all.min.js"></script>
@@ -177,9 +177,26 @@
   </section>
 
 
-  <section class="section">
+  <!-- Highlights -->
+  <!-- <section class="section">
     <div class="container is-max-desktop">
-      <!-- Abstract. -->
+      <div class="columns is-centered has-text-centered">
+        <h2 class="title is-3">✨ Highlights ✨</h2>
+      </div>
+      <div class="columns is-centered has-text-centered">
+        <p><strong>🔍 ViDi:</strong> New benchmark for fine-grained visual comparison and understanding.</p>
+        <p><strong>📊 Findings:</strong> MLLM struggle with counting/spatial relations.</p>
+        <p><strong>📈 Significant:</strong> improvements on objects, attributes, and counting.</p>
+        <p><strong>📉 Limited performance:</strong> spatial relations.</p>
+        <p>📚 Our dataset is a robust evaluation resource.</p>
+      </div>
+    </div>
+  </section> -->
+  <!-- End of Highlights -->
+
+  <!-- Abstract. -->
+  <section class="section hero is-light">
+    <div class="container is-max-desktop">
       <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
           <h2 class="title is-3">Abstract</h2>
@@ -202,199 +219,21 @@
         </div>
       </div>
       <!--/ Abstract.
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          <table>
-            <caption>MLLM performance metrics on the ViDi Benchmark. The values correspond to the average between the
-              two possible image orders, together with the corresponding variation.</caption>
-            <thead>
-              <tr>
-                <th colspan="7">Granular Alignment Setting</th>
-              </tr>
-              <tr>
-                <th>Model</th>
-                <th>BLEU<sub>1</sub></th>
-                <th>BLEU<sub>2</sub></th>
-                <th>BLEU<sub>3</sub></th>
-                <th>BLEU<sub>4</sub></th>
-                <th>ROUGE<sub>L</sub></th>
-                <th>CIDEr</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Phi3.5 Vision</td>
-                <td>37.5 &plusmn;0.2</td>
-                <td>21.0 &plusmn;0.4</td>
-                <td>9.9 &plusmn;0.3</td>
-                <td>5.1 &plusmn;0.3</td>
-                <td>29.5 &plusmn;0.3</td>
-                <td>6.9 &plusmn;0.4</td>
-              </tr>
-              <tr>
-                <td>MiniCPM-V-2.6</td>
-                <td>23.3 &plusmn;0.0</td>
-                <td>12.3 &plusmn;0.0</td>
-                <td>4.6 &plusmn;0.0</td>
-                <td>2.1 &plusmn;0.0</td>
-                <td>23.2 &plusmn;0.0</td>
-                <td>0.0 &plusmn;0.0</td>
-              </tr>
-              <tr>
-                <td>LLaVA-CoT</td>
-                <td>50.0 &plusmn;0.4</td>
-                <td><b>26.9 &plusmn;0.5</b></td>
-                <td><b>14.4 &plusmn;0.5</b></td>
-                <td><b>8.0 &plusmn;0.4</b></td>
-                <td>32.1 &plusmn;0.3</td>
-                <td>12.4 &plusmn;0.5</td>
-              </tr>
-              <tr>
-                <td>NVLM-D-72B</td>
-                <td>42.0 &plusmn;0.1</td>
-                <td>23.5 &plusmn;0.2</td>
-                <td>11.8 &plusmn;0.2</td>
-                <td>6.4 &plusmn;0.2</td>
-                <td>32.5 &plusmn;0.2</td>
-                <td>7.9 &plusmn;0.1</td>
-              </tr>
-              <tr>
-                <td>LLAVA-OV-72B</td>
-                <td>46.0 &plusmn;0.3</td>
-                <td>27.4 &plusmn;0.2</td>
-                <td>15.7 &plusmn;0.3</td>
-                <td>9.7 &plusmn;0.3</td>
-                <td><b>33.6 &plusmn;0.6</b></td>
-                <td><b>15.7 &plusmn;0.8</b></td>
-              </tr>
-              <tr>
-                <td>InternVL2.5-78B</td>
-                <td><b>53.4 &plusmn;0.5</b></td>
-                <td>31.4 &plusmn;0.1</td>
-                <td>17.5 &plusmn;0.2</td>
-                <td>10.2 &plusmn;0.2</td>
-                <td>37.5 &plusmn;0.0</td>
-                <td>17.2 &plusmn;0.0</td>
-              </tr>
-              <tr>
-                <td>Llama-3.2-90B</td>
-                <td>34.2 &plusmn;0.1</td>
-                <td>18.4 &plusmn;0.1</td>
-                <td>9.2 &plusmn;0.1</td>
-                <td>5.0 &plusmn;0.0</td>
-                <td>29.9 &plusmn;0.0</td>
-                <td>3.2 &plusmn;0.2</td>
-              </tr>
-            </tbody>
-            <thead>
-              <tr>
-                <th colspan="7">Global Alignment Setting</th>
-              </tr>
-              <tr>
-                <th>Model</th>
-                <th>BLEU<sub>1</sub></th>
-                <th>BLEU<sub>2</sub></th>
-                <th>BLEU<sub>3</sub></th>
-                <th>BLEU<sub>4</sub></th>
-                <th>ROUGE<sub>L</sub></th>
-                <th>CIDEr</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Phi3.5 Vision</td>
-                <td><b>27.9 &plusmn;0.1</b></td>
-                <td><b>14.4 &plusmn;0.1</b></td>
-                <td><b>6.6 &plusmn;0.0</b></td>
-                <td><b>3.3 &plusmn;0.0</b></td>
-                <td><b>22.6 &plusmn;0.0</b></td>
-                <td>3.3 &plusmn;0.1</td>
-              </tr>
-              <tr>
-                <td>MiniCPM-V-2.6</td>
-                <td>22.4 &plusmn;0.1</td>
-                <td>11.1 &plusmn;0.0</td>
-                <td>4.2 &plusmn;0.0</td>
-                <td>1.7 &plusmn;0.0</td>
-                <td>19.4 &plusmn;0.0</td>
-                <td>1.2 &plusmn;0.1</td>
-              </tr>
-              <tr>
-                <td>LLaVA-CoT</td>
-                <td>4.1 &plusmn;0.0</td>
-                <td>2.0 &plusmn;0.0</td>
-                <td>1.0 &plusmn;0.0</td>
-                <td>0.5 &plusmn;0.0</td>
-                <td>13.6 &plusmn;0.1</td>
-                <td><b>1.0 &plusmn;0.2</b></td>
-              </tr>
-              <tr>
-                <td>NVLM-D-72B</td>
-                <td>13.3 &plusmn;0.0</td>
-                <td>6.9 &plusmn;0.0</td>
-                <td>3.1 &plusmn;0.0</td>
-                <td><b>1.6 &plusmn;0.0</b></td>
-                <td>19.5 &plusmn;0.1</td>
-                <td>0.9 &plusmn;0.0</td>
-              </tr>
-              <tr>
-                <td>LLAVA-OV-72B</td>
-                <td>1.5 &plusmn;0.0</td>
-                <td>0.9 &plusmn;0.0</td>
-                <td>0.5 &plusmn;0.0</td>
-                <td>0.3 &plusmn;0.0</td>
-                <td>13.0 &plusmn;0.0</td>
-                <td>0.0 &plusmn;0.0</td>
-              </tr>
-              <tr>
-                <td>InternVL2.5-78B</td>
-                <td><b>16.3 &plusmn;0.3</b></td>
-                <td>8.6 &plusmn;0.1</td>
-                <td>4.6 &plusmn;0.0</td>
-                <td>2.6 &plusmn;0.0</td>
-                <td>18.7 &plusmn;0.0</td>
-                <td><b>3.4 &plusmn;0.0</b></td>
-              </tr>
-              <tr>
-                <td>Llama-3.2-90B</td>
-                <td>23.6 &plusmn;0.2</td>
-                <td><b>11.5 &plusmn;0.1</b></td>
-                <td>5.5 &plusmn;0.0</td>
-                <td>2.9 &plusmn;0.0</td>
-                <td><b>16.3 &plusmn;0.2</b></td>
-                <td>1.5 &plusmn;0.1</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
       -->
-
-      <!-- Paper video.
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Video</h2>
-        <div class="publication-video">
-          <iframe src="https://www.youtube.com/embed/MrKrnHhk8IA?rel=0&amp;showinfo=0"
-                  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-        </div>
-      </div>
-    </div>
-     Paper video. -->
     </div>
   </section>
 
 
   <script>
-  document.addEventListener("DOMContentLoaded", function () {
-    var carousels = bulmaCarousel.attach("#results-carousel", {
-      slidesToScroll: 1,
-      slidesToShow: 1,
-      autoplay: true,
-      autoplaySpeed: 8000, // 8 seconds
-      infinite: true
+    document.addEventListener("DOMContentLoaded", function () {
+      var carousels = bulmaCarousel.attach("#results-carousel", {
+        slidesToScroll: 1,
+        slidesToShow: 1,
+        autoplay: true,
+        autoplaySpeed: 8000, // 8 seconds
+        infinite: true
+      });
     });
-  });
   </script>
 
 
@@ -406,33 +245,49 @@
         <div id="results-carousel" class="carousel results-carousel">
           <div class="item">
             <center>
-              <img src="static/images/instance_14_img_1.png" alt="instance 14" />
+              <img src="static/images/instance_14_img_1.jpg" alt="instance 14" />
               <img src="static/images/instance_14_img_2.png" alt="instance 14" />
             </center>
-            <h6 class="subtitle is-6">
-              The color of the sky is blue or orange.<br>
-              The tower at the centre, with or without an antenna.<br>
-              The color of the logo of the coffee shop on the left, either green or purple.<br>
-              The traffic lights on the left are either green or red.<br>
-              The arrowhead on the light bulb sign at the construction site has 4 or 5 light bulbs.<br>
-              The logo at the construction site is either red or green.<br>
-              The crosswalk at the bottom, with the left stripe more or less faded.
+          </div>
+          <div class="item">
+            <center>
+              <img src="static/images/instance_14_img_1.jpg" alt="instance 14" />
+              <img src="static/images/instance_14_img_2_answer.jpg" alt="instance 14" />
+            </center>
+            <h6 class="subtitle is-6 has-text-centered">
+              <ul style="list-style-position: inside; display: inline-block; text-align: left;">
+                <li>The color of the sky is blue or orange.</li>
+                <li>The tower at the centre, with or without an antenna.</li>
+                <li>The color of the logo of the coffee shop on the left, either green or purple.</li>
+                <li>The traffic lights on the left are either green or red.</li>
+                <li>The arrowhead on the light bulb sign at the construction site has 4 or 5 light bulbs.</li>
+                <li>The logo at the construction site is either red or green.</li>
+                <li>The crosswalk at the bottom, with the left stripe more or less faded.</li>
+              </ul>
             </h6>
           </div>
           <div class="item">
             <center>
-              <img src="static/images/instance_15_img_1.png" alt="instance 15" />
+              <img src="static/images/instance_15_img_1.jpg" alt="instance 15" />
               <img src="static/images/instance_15_img_2.png" alt="instance 15" />
             </center>
-            <h6 class="subtitle is-6">
-              The number of windows on a house in the center.<br>
-              The color of the cover hiding a construction site in the center is green or red.<br>
-              The pink house in the center, with or without a small statue of a saint on its wall.<br>
-              The color of the door on the brick wall, either brown or green.<br>
-              The color of the shirt of the person driving the boat is blue or purple.<br>
-              The number written on the side of the boat is 9246 or 92466.<br>
-              The graffiti on the orange wall of the house on the right is missing.<br>
-              The stone step at the lower left corner, with or without a docking ring.<br>
+          </div>
+          <div class="item">
+            <center>
+              <img src="static/images/instance_15_img_1.jpg" alt="instance 15" />
+              <img src="static/images/instance_15_img_2_answer.jpg" alt="instance 15" />
+            </center>
+            <h6 class="subtitle is-6 has-text-centered">
+              <ul style="list-style-position: inside; display: inline-block; text-align: left;">
+                <li>The number of windows on a house in the center.</li>
+                <li>The color of the cover hiding a construction site in the center is green or red.</li>
+                <li>The pink house in the center, with or without a small statue of a saint on its wall.</li>
+                <li>The color of the door on the brick wall, either brown or green.</li>
+                <li>The color of the shirt of the person driving the boat is blue or purple.</li>
+                <li>The number written on the side of the boat is 9246 or 92466.</li>
+                <li>The graffiti on the orange wall of the house on the right is missing.</li>
+                <li>The stone step at the lower left corner, with or without a docking ring.</li>
+              </ul>
             </h6>
           </div>
           <div class="item">
@@ -440,12 +295,20 @@
               <img src="static/images/instance_11_img_1.png" alt="instance 11" />
               <img src="static/images/instance_11_img_2.png" alt="instance 11" />
             </center>
-            <h6 class="subtitle is-6">
-              The front wheel of the bike, with or without an orange reflector.<br>
-              The steering handlebars, with or without a mirror.<br>
-              The centre of the bike, either clear or black, or with a Victory Motorcycles logo.<br>
-              The woman's arm tattoo pattern is different.<br>
-              The woman's belt has a pattern with circles or is fully dark.
+          </div>
+          <div class="item">
+            <center>
+              <img src="static/images/instance_11_img_1.png" alt="instance 11" />
+              <img src="static/images/instance_11_img_2_answers.png" alt="instance 11" />
+            </center>
+            <h6 class="subtitle is-6 has-text-centered">
+              <ul style="list-style-position: inside; display: inline-block; text-align: left;">
+                <li>The front wheel of the bike, with or without an orange reflector.</li>
+                <li>The steering handlebars, with or without a mirror.</li>
+                <li>The centre of the bike, either clear or black, or with a Victory Motorcycles logo.</li>
+                <li>The woman's arm tattoo pattern is different.</li>
+                <li>The woman's belt has a pattern with circles or is fully dark.</li>
+              </ul>
             </h6>
           </div>
           <div class="item">
@@ -453,12 +316,20 @@
               <img src="static/images/instance_12_img_1.png" alt="instance 12" />
               <img src="static/images/instance_12_img_2.png" alt="instance 12" />
             </center>
-            <h6 class="subtitle is-6">
-                The teddy bear's foot is to the left, with or without pads.<br>
-                The yellow block in the center features a letter S or a number 3.<br>
-                The set of toys at the front is either with or without a matryoshka doll.<br>
-                The letter S or U on the blue block to the right.<br>
-                The color of the triangle block further to the right is yellow or orange.
+          </div>
+          <div class="item">
+            <center>
+              <img src="static/images/instance_12_img_1.png" alt="instance 12" />
+              <img src="static/images/instance_12_img_2_answer.png" alt="instance 12" />
+            </center>
+            <h6 class="subtitle is-6 has-text-centered">
+              <ul style="list-style-position: inside; display: inline-block; text-align: left;">
+                <li>The teddy bear's foot is to the left, with or without pads.</li>
+                <li>The yellow block in the center features a letter S or a number 3.</li>
+                <li>The set of toys at the front is either with or without a matryoshka doll.</li>
+                <li>The letter S or U on the blue block to the right.</li>
+                <li>The color of the triangle block further to the right is yellow or orange.</li>
+              </ul>
             </h6>
           </div>
         </div>
@@ -466,6 +337,255 @@
     </div>
   </section>
   <!-- End image carousel -->
+
+  <section class="section">
+    <div class="container is-max-desktop">
+      <h2 class="title is-3 has-text-centered">Zero-shot Eval on ViDi Benchmark</h2>
+
+      <article class="message is-info">
+        <div class="message-body">
+          <strong>Setup.</strong> We evaluated prominent MLLMs at generating descriptions of multiple diffirences
+          between pairs of images.
+
+          <p>
+            <strong>Granular Alignment:</strong> Models describe a single difference, evaluated by matching against
+            individual ground-truth descriptions.
+          </p>
+
+          <p> <strong>Global Alignment: </strong>Models list all differences, assessed against the combined ground-truth
+            descriptions.</p>
+
+          <p>
+            <strong>Metrics: </strong>BLEU, ROUGE_L, and CIDEr used to measure text generation quality, coherence, and
+            relevance to annotations.
+          </p>
+
+          <p><strong>Consistency: </strong> Evaluated by comparing performance when swapping the input image order.</p>
+
+        </div>
+      </article>
+
+      <div class="table-wrapper mb-5">
+        <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
+          <caption> Table 1 - MLLM performance metrics on the ViDi Benchmark. The values correspond to the average
+            between the two possible image orders, together with the corresponding variation.
+          </caption>
+          <thead>
+            <tr>
+              <th colspan="7" class="has-text-centered">Granular Alignment Setting</th>
+            </tr>
+            <tr>
+              <th>Model</th>
+              <th>BLEU<sub>1</sub></th>
+              <th>BLEU<sub>2</sub></th>
+              <th>BLEU<sub>3</sub></th>
+              <th>BLEU<sub>4</sub></th>
+              <th>ROUGE<sub>L</sub></th>
+              <th>CIDEr</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Phi3.5 Vision</td>
+              <td>37.5 &plusmn;0.2</td>
+              <td>21.0 &plusmn;0.4</td>
+              <td>9.9 &plusmn;0.3</td>
+              <td>5.1 &plusmn;0.3</td>
+              <td>29.5 &plusmn;0.3</td>
+              <td>6.9 &plusmn;0.4</td>
+            </tr>
+            <tr>
+              <td>MiniCPM-V-2.6</td>
+              <td>23.3 &plusmn;0.0</td>
+              <td>12.3 &plusmn;0.0</td>
+              <td>4.6 &plusmn;0.0</td>
+              <td>2.1 &plusmn;0.0</td>
+              <td>23.2 &plusmn;0.0</td>
+              <td>0.0 &plusmn;0.0</td>
+            </tr>
+            <tr>
+              <td>LLaVA-CoT</td>
+              <td>50.0 &plusmn;0.4</td>
+              <td><b>26.9 &plusmn;0.5</b></td>
+              <td><b>14.4 &plusmn;0.5</b></td>
+              <td><b>8.0 &plusmn;0.4</b></td>
+              <td>32.1 &plusmn;0.3</td>
+              <td>12.4 &plusmn;0.5</td>
+            </tr>
+            <tr>
+              <td>NVLM-D-72B</td>
+              <td>42.0 &plusmn;0.1</td>
+              <td>23.5 &plusmn;0.2</td>
+              <td>11.8 &plusmn;0.2</td>
+              <td>6.4 &plusmn;0.2</td>
+              <td>32.5 &plusmn;0.2</td>
+              <td>7.9 &plusmn;0.1</td>
+            </tr>
+            <tr>
+              <td>LLAVA-OV-72B</td>
+              <td>46.0 &plusmn;0.3</td>
+              <td>27.4 &plusmn;0.2</td>
+              <td>15.7 &plusmn;0.3</td>
+              <td>9.7 &plusmn;0.3</td>
+              <td><b>33.6 &plusmn;0.6</b></td>
+              <td><b>15.7 &plusmn;0.8</b></td>
+            </tr>
+            <tr>
+              <td>InternVL2.5-78B</td>
+              <td><b>53.4 &plusmn;0.5</b></td>
+              <td>31.4 &plusmn;0.1</td>
+              <td>17.5 &plusmn;0.2</td>
+              <td>10.2 &plusmn;0.2</td>
+              <td>37.5 &plusmn;0.0</td>
+              <td>17.2 &plusmn;0.0</td>
+            </tr>
+            <tr>
+              <td>Llama-3.2-90B</td>
+              <td>34.2 &plusmn;0.1</td>
+              <td>18.4 &plusmn;0.1</td>
+              <td>9.2 &plusmn;0.1</td>
+              <td>5.0 &plusmn;0.0</td>
+              <td>29.9 &plusmn;0.0</td>
+              <td>3.2 &plusmn;0.2</td>
+            </tr>
+          </tbody>
+          <thead>
+            <tr>
+              <th colspan="7" class="has-text-centered">Global Alignment Setting</th>
+            </tr>
+            <tr>
+              <th>Model</th>
+              <th>BLEU<sub>1</sub></th>
+              <th>BLEU<sub>2</sub></th>
+              <th>BLEU<sub>3</sub></th>
+              <th>BLEU<sub>4</sub></th>
+              <th>ROUGE<sub>L</sub></th>
+              <th>CIDEr</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Phi3.5 Vision</td>
+              <td><b>27.9 &plusmn;0.1</b></td>
+              <td><b>14.4 &plusmn;0.1</b></td>
+              <td><b>6.6 &plusmn;0.0</b></td>
+              <td><b>3.3 &plusmn;0.0</b></td>
+              <td><b>22.6 &plusmn;0.0</b></td>
+              <td>3.3 &plusmn;0.1</td>
+            </tr>
+            <tr>
+              <td>MiniCPM-V-2.6</td>
+              <td>22.4 &plusmn;0.1</td>
+              <td>11.1 &plusmn;0.0</td>
+              <td>4.2 &plusmn;0.0</td>
+              <td>1.7 &plusmn;0.0</td>
+              <td>19.4 &plusmn;0.0</td>
+              <td>1.2 &plusmn;0.1</td>
+            </tr>
+            <tr>
+              <td>LLaVA-CoT</td>
+              <td>4.1 &plusmn;0.0</td>
+              <td>2.0 &plusmn;0.0</td>
+              <td>1.0 &plusmn;0.0</td>
+              <td>0.5 &plusmn;0.0</td>
+              <td>13.6 &plusmn;0.1</td>
+              <td><b>1.0 &plusmn;0.2</b></td>
+            </tr>
+            <tr>
+              <td>NVLM-D-72B</td>
+              <td>13.3 &plusmn;0.0</td>
+              <td>6.9 &plusmn;0.0</td>
+              <td>3.1 &plusmn;0.0</td>
+              <td><b>1.6 &plusmn;0.0</b></td>
+              <td>19.5 &plusmn;0.1</td>
+              <td>0.9 &plusmn;0.0</td>
+            </tr>
+            <tr>
+              <td>LLAVA-OV-72B</td>
+              <td>1.5 &plusmn;0.0</td>
+              <td>0.9 &plusmn;0.0</td>
+              <td>0.5 &plusmn;0.0</td>
+              <td>0.3 &plusmn;0.0</td>
+              <td>13.0 &plusmn;0.0</td>
+              <td>0.0 &plusmn;0.0</td>
+            </tr>
+            <tr>
+              <td>InternVL2.5-78B</td>
+              <td><b>16.3 &plusmn;0.3</b></td>
+              <td>8.6 &plusmn;0.1</td>
+              <td>4.6 &plusmn;0.0</td>
+              <td>2.6 &plusmn;0.0</td>
+              <td>18.7 &plusmn;0.0</td>
+              <td><b>3.4 &plusmn;0.0</b></td>
+            </tr>
+            <tr>
+              <td>Llama-3.2-90B</td>
+              <td>23.6 &plusmn;0.2</td>
+              <td>11.5 <b>&plusmn;0.1</b></td>
+              <td>5.5 &plusmn;0.0</td>
+              <td>2.9 &plusmn;0.0</td>
+              <td>16.3 <b>&plusmn;0.2</b></td>
+              <td>1.5 &plusmn;0.1</td>
+            </tr>
+            <!-- Add other rows as needed and highlight the best scores in each category -->
+          </tbody>
+        </table>
+      </div>
+
+
+      <!-- Key Observations -->
+      <div class="content">
+
+        <h2 class="title is-6">How do MLLMs perform on ViDi?</h2>
+        <p>
+          Performance significantly drops in the global alignment setting, indicating <strong>difficulty in
+            comprehensively capturing all differences</strong>.
+
+          Models exhibit repetitive outputs and struggle with generating accurate, complete descriptions.
+
+          InternVL2.5-78B model performs best at granular alignment, showcasing a capacity for localized difference
+          detection.
+
+          The task of finding one difference is more manageable by current MLLMs, whereas the more complex task of
+          comprehensively describing differences is generally not accomplished.
+        </p>
+        <p>
+          ViDi provides a challenging, realistic benchmark that pushes MLLM evaluation beyond simplified scenarios.
+        </p>
+        <p>
+          Results underscore the gap between linguistic fluency and true visual comprehension in current MLLMs.
+        </p>
+        <!-- <p>
+          Future Work: Extending ViDi to multi-turn dialog settings, incorporating diverse languages.
+        </p> -->
+      </div>
+      <!-- End Key Observations -->
+    </div>
+  </section>
+
+  <!-- <section class="section">
+    <div class="container is-max-desktop">
+      <div style="background-color: #ffeb3b; padding: 1em; border-radius: 10px;">
+        <p>🚀✨ Supercharge your <strong>Multimodal LLM evaluation</strong> with our differences in image pairs. The <a
+            href="https://huggingface.co/" target="_blank"
+            style="color: #d32f2f;">ViDi Benchmark</a> compares two images and describes their differences in natural language. 🖼️📝
+        </p>
+        <pre><code>
+      image_task_query_templates = [
+        f'You are given two images. Which one better aligns with the description: "{caption}"? The first or the second image?',
+        f'Question: You are given two images. Which one better aligns with the description? "{caption}" Choices: First, Second.',
+        f'Based on the description: "{caption}", please select one of the given options that best matches the image. Choices: First, Second.',
+      ]
+      
+      text_task_query_templates = [
+        f"Question: Does this image depict: (A) {candidate_texts[0]}, or (B) {candidate_texts[1]}? Choices: A, B.",
+        f"Does this image best represent: (A) {candidate_texts[0]}, or (B) {candidate_texts[1]}?",
+        f"Which of the following best matches the image: (A) {candidate_texts[0]}, or (B) {candidate_texts[1]}?",
+      ]
+        </code></pre>
+      </div>
+    </div>
+  </section> -->
 
 
   <!-- author    = {Helder Dias and Arlindo D. Oliveira and Bruno Martins}, -->
@@ -485,7 +605,7 @@
   <footer class="footer">
     <div class="container">
       <div class="content has-text-centered">
-        <a class="icon-link" href="./static/videos/vidi_paper.pdf">
+        <a class="icon-link" href="./static/vidi_paper.pdf">
           <i class="fas fa-file-pdf"></i>
         </a>
         <!--       <a class="icon-link" href="https://github.com/" class="external-link" disabled>
@@ -499,11 +619,6 @@
               This website is licensed under a <a rel="license"
                 href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
                 Commons Attribution-ShareAlike 4.0 International License</a>.
-            </p>
-            <p>
-              This means you are free to borrow the <a href="https://github.com/nerfies/nerfies.github.io">source
-                code</a> of this website,
-              we just ask that you link back to this page in the footer.
             </p>
           </div>
         </div>
